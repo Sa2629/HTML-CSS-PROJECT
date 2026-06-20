@@ -54,7 +54,7 @@ nav ul li a:hover{
     border-radius: 50%;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 18px; /*20*/
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     padding:8px;
@@ -69,14 +69,14 @@ nav ul li a:hover{
     align-items:center;
     text-align:center;
     flex-direction:column;
-    /* background-image: url('https://img.magnific.com/premium-photo/concept-adventure-extreme-travel_820340-31600.jpg?semt=ais_hybrid&w=740&q=80');
+    /* background-image: url('https://img.magnific.com/premium-photo/concept-adventure-extreme-travel_820340-31600.jpg?semt=ais_hybrid&w=740&q=80'); */
     background-repeat: no-repeat;
-    object-fit: cover; */
+    object-fit: cover;
 }
 
 
 .hero h2{
-    font-size:4rem;
+    font-size:4rem; /*4*/
     color:#FFD700;
 }
 
@@ -335,7 +335,7 @@ footer{
   justify-content: center;
   flex-wrap: wrap;  
   gap:15px;
-  margin:60px;
+  margin:20px; /*60px*/
  }
 
  .benifits-offers{
@@ -449,7 +449,7 @@ footer{
  }
 
  .parent-container-of-trending-sight-seeing-cities{
-    margin:0px 0px 3px 3px;
+    margin:0px 0px 0px 0px; /*3 3*/
     width:100%;
     /* width:1700px; */
     height:330px;
@@ -470,7 +470,7 @@ footer{
  }
 
  .parent-container-of-new-destinations{
-    margin:15px;
+    margin:0px; /*15px*/
     padding:20px;
     width:100%;
     /* width:1700px; */
@@ -491,7 +491,7 @@ footer{
  }
 
  .tilt-card-section{
-    margin:15px;
+    /* margin:15px; */
     width:100%;
     /* width:1700px; */
     height:630px;
