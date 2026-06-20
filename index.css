@@ -1,0 +1,893 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+ .splash{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100vh;
+            background:black;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            z-index:9999;
+
+            animation: hideSplash 1.2s forwards;
+        }
+
+        /* Plane */
+        .plane{
+            font-size:80px;
+            position:absolute;
+            animation: fly 1.2s linear forwards;
+        }
+
+       @keyframes fly{
+    from{
+        transform: translate(-150px, 350px);
+    }
+    to{
+        transform: translate(120vw, -350px);
+    }
+}
+
+        @keyframes hideSplash{
+            0%,99%{
+                opacity:1;
+            }
+            100%{
+                opacity:0;
+                visibility:hidden;
+            }
+        }
+
+
+/* Navbar */
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    color:#FFD700;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD700;
+}
+
+.floating-btn{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(rgb(224, 239, 57), rgb(190, 195, 22));
+    color:#111;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding:8px;
+
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    /* background-image: url('https://img.magnific.com/premium-photo/concept-adventure-extreme-travel_820340-31600.jpg?semt=ais_hybrid&w=740&q=80');
+    background-repeat: no-repeat;
+    object-fit: cover; */
+}
+
+
+.hero h2{
+    font-size:4rem;
+    color:#FFD700;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#ccc;
+    font-size:1.2rem;
+}
+
+.btn{
+    margin-top:65px;
+    padding:12px 30px;
+    background:#FFD700;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:translateY(-3px);
+}
+
+/* form */
+.form-container{
+    display:flex;
+    justify-content:center;
+    padding:60px;
+}
+
+.form{
+    width:450px;
+    height:500px;
+    background:#1c1c1c;
+    border:2px solid #FFD700;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.form h2{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.form-destination{
+    width:200px;
+    height:30px;
+    margin:20px;
+    border:1px solid #FFD700;
+}
+
+.check-in{
+    margin:20px;
+    height:30px;
+}
+
+.check-out{
+    margin:20px;
+    height:30px;
+}
+
+.roomS{
+    margin:20px;
+    height:30px;
+    /* width:0px; */
+}
+
+.passangers{
+    margin:17px;
+    width:120px;
+    height:30px;
+}
+
+/* Footer */
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    color:#999;
+}
+
+.check-avalability{
+    padding:12px 30px;
+    background:#FFD700;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+    border:none;
+    cursor: pointer;
+}
+
+.check-avalability:hover{
+    background-color: white;
+}
+
+.stuck-anywhere-need-help{
+    margin:20px;
+}
+
+.need-help{
+    color:#FFD700;
+}
+
+.red-color-section {
+     width: 100%;
+     height: 290px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: #FFD700;
+ }
+
+ #h1{
+    font-size: 48px;
+    font-family:'Times New Roman', Times, serif;
+ }
+ .Subscribe-to-get-our-newsletters{
+    width:25%;
+    height:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFD700;
+ }
+ .subscribe-newsletter{
+    width:25%;
+    height:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .sn{
+    border: 1px solid #FFD700;
+    background-color: #FFD700;
+    border-radius: 5px;
+    color:black;
+    width:240px;
+    height:40px;
+    cursor: pointer;
+ }
+
+ .sn:hover{
+    background-color: white;
+ }
+
+.my-own{
+    width:100%;
+    height:120%; /*100*/
+    margin-bottom: 120px;
+    background-color: #111;
+ }
+ #my-own-side-heading{
+    display:flex;
+    justify-content: center;
+    color:white;
+ }
+ .cards{
+    width:100%;
+    height:100%;
+    /* border:1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:30px;
+    color:white;
+    padding-top: 130px;
+ }
+
+ .card1{
+   width:650px;
+   height: 800px;
+   /* border:1px solid black; */
+   margin-top: 20px;
+   box-shadow: rgba(234, 188, 19, 0.25) 0px 54px 55px, rgba(125, 123, 95, 0.12) 0px -12px 30px, rgba(237, 209, 21, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    /* border:1px solid #FFD700; */
+ }
+
+ .img-div{
+    width:650px;
+    height:300px;
+ }
+
+ .kerala-imgg{
+    width:650px;
+    height:300px;
+    object-fit: cover;
+    border-radius: 5px;
+ }
+ #name-of-the-state{
+    padding-left: 9px;
+    padding-top: 6px;
+    color:#FFD700;
+ }
+ .card1-description{
+    width:650px;
+    height:500px;
+ }
+ #card1-info{
+    padding: 8px;
+ }
+ .unordered-list{
+    padding:20px;
+ }
+ .Places-to-Visit-in-Kerala{
+    padding: 9px;
+    color:#FFD700;
+ }
+ .Places-to-Visit-in-Punjab{
+    padding: 9px;
+    color:#FFD700;
+ }
+ .whole-box{
+    display:flex;
+    justify-content: space-between;
+ }
+ .get-there-box{
+    width:200px;
+    height:155px;
+    margin-left: 10px;
+ }
+ #get-there{
+    padding: 5px;
+ }
+ .content-box1{
+    display: flex;
+    justify-content: space-between;
+ }
+ .iframe{
+    width:200px;
+    height:155px;
+ }
+ .video{
+    width:190px;
+    height:153px;
+ }
+
+ .card2{
+    margin-top: 20px;
+    width:450px;
+    height: 500px;
+    border:1px solid black;
+ }
+ .video2{
+    width:190px;
+    height:153px;
+ }
+
+ .parent-container-under-offers-benifits{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+  gap:15px;
+  margin:60px;
+ }
+
+ .benifits-offers{
+    display: flex;
+    justify-content:center;
+    color: #FFD700;
+ }
+ .Card-One{
+    width:270px;
+    height:200px;
+    border:1px solid #FFD700;
+ }
+
+ .offer-img{
+    display: flex;
+    justify-content: center;
+ }
+
+ .last-img-under-benifits-offers{
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px -3px rgba(218, 177, 12, 0.5);
+ }
+ #top-travel-picks{
+    color:#FFD700;
+    background-color: #1a1a1a;
+    text-align: center;
+    margin:50px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+ }
+ .five-cards-section{
+    width:100%;
+    height: 100%;
+    background-color:#111;
+    padding: 40px;
+ }
+ .container9{
+    display:flex;
+    width:100%;
+    height:100%;
+    gap:10px;
+    justify-content: center;
+    justify-content: center;
+ }
+ .five{
+    width:450px;
+    height:550px;
+    background-color: black;
+    margin-bottom: 50px;
+ }
+ .texas{
+    width:448px;
+    height:240px;
+ }
+ .btn-container{
+    display: flex;
+    justify-content: center;
+    align-content: end;
+    margin-top: 80px;
+ }
+ .text-inside-texas{
+    padding:15px;
+ }
+ .more-info-btn{
+    background-color: #FFD700;
+    border: none;
+    height:30px;
+    width:300px;
+    color:black;
+    cursor: pointer;
+ }
+
+ .more-info-btn:hover{
+    background-color: #c0a822;
+ }
+ 
+ .top-section{
+    background-color: #FFD700;
+    color:black;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .five-box-container{
+    padding: 10px;
+ }
+ #One-box{
+    margin:10px;
+ }
+ .one-box{
+    height:100px;
+    background-color:#FFD700;
+    color:black;
+    cursor: pointer;
+ }
+ .one-box:hover{
+    background-color: white;
+    color: black;
+ }
+ .image1{
+    float:left;
+    width:130px;
+    height:100px;
+ }
+
+ .kerala-video{
+    margin-bottom: 35px;
+ }
+
+ .parent-container-of-trending-sight-seeing-cities{
+    margin:0px 0px 3px 3px;
+    width:100%;
+    /* width:1700px; */
+    height:330px;
+    border:1px solid #FFD700;
+    background-color: #FFD700;
+    display:flex;
+    justify-content: space-between;
+    gap:0px;
+ }
+
+ #jaipur-image{    
+    margin:30px;
+    width: 250px;
+    height:250px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+ }
+
+ .parent-container-of-new-destinations{
+    margin:15px;
+    padding:20px;
+    width:100%;
+    /* width:1700px; */
+    height:170px;
+    border:1px solid #FFD700;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:10px;
+ }
+
+ .athens{
+    width:100px;
+    height:100px;
+    border:1px solid #FFD700;
+    border-radius: 50%;
+    outline: #FFD700 solid 4px;
+ }
+
+ .tilt-card-section{
+    margin:15px;
+    width:100%;
+    /* width:1700px; */
+    height:630px;
+    border:1px solid #FFD700;
+    display:flex;
+    justify-content: space-between;
+    gap:0px;
+ }
+
+ .Embark-on-a-journey{
+    margin-top: 200px;
+    padding:40px;
+ }
+
+
+ .discover-meets-the-sky{
+    color:#FFD700;
+ }
+
+ .tilt-cards{
+    width:100%;
+    /* width:700px; */
+    height:550px;
+    margin:50px;
+    margin-left: 40px;
+    display: flex;
+    position: relative;
+    z-index: 3;
+ }
+
+ .tilt-card1{
+    width:380px;
+    height:450px;
+    position: absolute;
+    left:25%;
+    top:40px;
+    position: relative;
+    }
+
+    .video1{
+        width:380px;
+        height: 450px;
+    }
+
+ .big-yellow-box{
+    width:600px;
+    height:600px;
+    border:1px solid #FFD700;
+    margin:40px;
+    background-color: #FFD700;
+    border-radius: 10px;
+ }
+
+ .number{
+    color:black;
+    position: relative;
+    top:180px;
+    left:115px;
+    font-size: 90px;
+ }
+
+ .daily{
+    color:black;
+    position: relative;
+    top:210px;
+    left:115px;
+ }
+
+ .flights{
+    position: relative;
+    top:210px;
+    left:115px;
+    color:black;
+ }
+
+ .indigo-plane{
+    position:relative;
+    top:10px;
+    left:490px;
+    font-size: 50px;
+ }
+
+ .four-boxes-parent-container{
+    width:1000px;
+    height: 600px;
+    margin:28px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .big-img-section{
+    display: flex;
+    justify-content: center;
+    width:100%;
+ }
+
+ .two-section-parent-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+ }
+
+ .ninety-six-domesty-destinations{
+    width:450px;
+    height:250px;
+    margin:20px;
+    border:1px solid #FFD700;
+ }
+
+.content-under-ninety-six-domesty-destinations{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:30px;
+    color:#FFD700;
+}
+
+.last-footer-section{
+    width:100%;
+    height:700px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.column-1{
+    padding: 20px;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+}
+.column-1 li{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.column-1 li:hover{
+    color:#FFD700;
+}
+
+.company{
+    font-size: 20px;
+}
+
+.col-1-unordered-list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+@media (max-width:1024px){
+
+    nav{
+        padding:20px;
+    }
+
+    .hero h2{
+        font-size:2.5rem;
+    }
+
+    .card1{
+        width:90%;
+        height:auto;
+    }
+
+    .img-div,
+    .kerala-imgg,
+    .card1-description{
+        width:100%;
+        height:auto;
+    }
+
+    .container9{
+        flex-wrap:wrap;
+    }
+
+    .five{
+        width:45%;
+    }
+
+    .last-img-under-benifits-offers{
+        width:90%;
+        height:auto;
+        margin:0 auto;
+        display:block;
+    }
+
+    .parent-container-of-trending-sight-seeing-cities,
+    .parent-container-of-new-destinations,
+    .tilt-card-section{
+        width:95%;
+        height:auto;
+        flex-wrap:wrap;
+    }
+
+}
+
+/*mobile version*/
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    .hero h2{
+        font-size:1.8rem;
+        padding:15px;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .form{
+        width:95%;
+        height:auto;
+    }
+
+    .form-destination,
+    .check-in,
+    .check-out,
+    .passangers{
+        width:90%;
+        margin:10px auto;
+        display:block;
+    }
+
+    .cards{
+        padding-top:40px;
+    }
+
+    .card1{
+        width:100%;
+        height:auto;
+    }
+
+    .img-div,
+    .kerala-imgg,
+    .card1-description{
+        width:100%;
+        height:auto;
+    }
+
+    .whole-box{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .iframe,
+    .video,
+    .video2{
+        width:100%;
+        height:250px;
+    }
+
+    .Subscribe-to-get-our-newsletters,
+    .subscribe-newsletter{
+        width:90%;
+    }
+
+    .five-cards-section{
+        padding:10px;
+    }
+
+    .container9{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .five{
+        width:95%;
+        height:auto;
+    }
+
+    .texas{
+        width:100%;
+        height:auto;
+    }
+
+    .last-img-under-benifits-offers{
+        width:100%;
+        height:auto;
+        margin-left:0;
+    }
+
+    .parent-container-of-trending-sight-seeing-cities{
+        width:100%;
+        height:auto;
+        flex-direction:column;
+        align-items:center;
+        padding:20px;
+    }
+
+    #jaipur-image{
+        width:90%;
+        height:auto;
+        margin:10px;
+    }
+
+    .parent-container-of-new-destinations{
+        width:100%;
+        height:auto;
+    }
+
+    .tilt-card-section{
+        width:100%;
+        height:auto;
+        flex-direction:column;
+    }
+
+    .tilt-cards{
+        width:100%;
+        height:auto;
+        margin:0;
+    }
+
+    .tilt-card1,
+    .video1{
+        width:100%;
+        height:auto;
+        position:static;
+    }
+
+    .big-yellow-box{
+        width:95%;
+        height:auto;
+        margin:10px auto;
+    }
+
+    .two-section-parent-container{
+        flex-direction:column;
+    }
+
+    .four-boxes-parent-container{
+        width:100%;
+        height:auto;
+    }
+
+    .ninety-six-domesty-destinations{
+        width:90%;
+        height:auto;
+    }
+
+    .last-footer-section{
+        flex-direction:column;
+        height:auto;
+    }
+
+}
