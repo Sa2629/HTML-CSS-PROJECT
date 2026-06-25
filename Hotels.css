@@ -1,0 +1,522 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #111;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+
+        .logo {
+            color: #FFD700;
+            font-size: 28px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .logo:hover {
+            color: #FFD700;
+            text-shadow: 0 0 10px #FFD900;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            /*0.3s*/
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+            transform: translateY(-3px);
+            /*chatgpt*/
+        }
+
+        .login-btn {
+            width: 85px;
+            height: 35px;
+            border: 1px solid #FFD700;
+            border-radius: 20px;
+        }
+
+        .login {
+            width: 60px;
+            height: 20px;
+            border: 1px solid #FFD700;
+            border-radius: 20px;
+            color: #FFD700;
+            display: flex;
+            justify-content: center;
+            margin: 7px;
+        }
+
+        .plane {
+            position: fixed;
+            top: 100px;
+            left: -100px;
+            font-size: 40px;
+            animation: fly 10s linear infinite;
+        }
+
+        @keyframes fly {
+            0% {
+                left: -10px;
+                top: 850px;
+                rotate: -10deg;
+            }
+
+            20% {
+
+                left: 1000px;
+                top: -100%;
+                rotate: -20deg;
+            }
+
+            40% {
+                left: 1300px;
+                top: 110%;
+                rotate: 180deg;
+            }
+        }
+
+        .book-hotels-section {
+            margin-top: 100px;
+        }
+
+        .book-hotels-parent-container {
+            width: 100%;
+            height: 80px;
+            margin: auto;
+            /* border:1px solid #FFD700; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .book-hotels-text {
+            padding: 20px;
+            height: 60px;
+            color: #FFD700;
+            /* border:1px solid #FFD700; */
+        }
+
+        .mybookings-wishlist {
+            width: 350px;
+            height: 70px;
+            /* border:1px solid #FFD700; */
+            display: flex;
+            justify-content: space-between;
+            color: #FFD700;
+            align-items: center;
+        }
+
+        .my-bookings {
+            border: 1px solid #FFD700;
+            border-radius: 20px;
+            padding: 8px;
+            margin: 8px;
+        }
+
+        .wishlist {
+            border: 1px solid #FFD700;
+            border-radius: 20px;
+            padding: 8px;
+            margin: 8px;
+        }
+
+        .selection-box {
+            /*selection box starts here*/
+            width: 100%;
+            height: 250px;
+            /* border:1px solid #FFD700; */
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .parent-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-box {
+            /*this is the main box where content is wrote!*/
+            width: 64%;
+            height: 250px;
+            border: 1px solid #FFD700;
+            border-radius: 10px;
+        }
+
+        .unlock-6e-exclusive-rates-block {
+            color: #FFD700;
+            margin: 15px;
+        }
+
+        .radio-buttons {
+            display: flex;
+            /* border:1px solid #FFD700; */
+            padding: 16px;
+            color: #FFD700;
+        }
+
+        .radio-1 {
+            margin: 10px;
+        }
+
+        .parent-container-for-inner-box {
+            /*parent container of inner box*/
+            width: 96.5%;
+            height: 90px;
+            border: 1px solid #FFD700;
+            border-radius: 10px;
+            margin: 20px;
+            display: flex;
+        }
+
+        .destination-div {
+            width: 24.19%;
+            height: 90px;
+            border-right: 1px solid #FFD700;
+            /* border-radius: 10px; */
+
+        }
+
+        .destination-text {
+            color: white;
+            padding: 13px;
+        }
+
+        .where-to {
+            cursor: pointer;
+            color: #FFD700;
+            padding-left: 13px;
+        }
+
+        .check-in-date-div {
+            width: 20%;
+            height: 90px;
+            border-right: 1px solid #FFD700;
+            /* border-radius: 10px; */
+        }
+
+        .check-in-date-text {
+            padding: 13px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .date {
+            color: #FFD700;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .search-div {
+            /* padding:38px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 10px; */
+        }
+
+
+        .search-btn {
+            height: 50px;
+            width: 120px;
+            background-color: #FFD700;
+            border: none;
+            margin: 25px;
+            border-radius: 25px;
+            /* display: flex;
+        justify-content: center; */
+            cursor: pointer;
+        }
+
+        .search-btn:hover {
+            background-color: #ab9831;
+        }
+
+        .goa-section {
+            margin-bottom: 20px;
+        }
+
+        .parent-container-of-goa-section {
+            /*Goa Section Starts here*/
+            width: 100%;
+            height: 50px;
+            /* border:1px solid #FFD700; */
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .goa-parent {
+            width: 28%;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 330px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #FFD700;
+            border-radius: 15px;
+        }
+
+        .goa {
+            width: 50%;
+            height: 50px;
+            color: #FFD700;
+            padding: 6px;
+        }
+
+        .goa-date {
+            padding-top: 9px;
+            padding: 6px;
+            color: #FFD700;
+        }
+
+        .images-section {
+            display: flex;
+            justify-content: center;
+        }
+
+        .images-container {
+            width: 64%;
+            border: 1px solid #FFD700;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .images-container img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .slider {
+            width: 500px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+
+            animation: changeImage 9s infinite;
+        }
+
+        @keyframes changeImage {
+
+            0%,
+            33% {
+                background-image: url('./animation_indigo_img.jpg');
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            34%,
+            66% {
+                background-image: url('./animation_indigo_img2.jpg');
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            67%,
+            100% {
+                background-image: url('./animaton_indigo_image3.jpg');
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .powered-section {
+            width: 64%;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .powered-section h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .info-box {
+            background: #1b1b1b;
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .info-box p {
+            color: white;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .read-more {
+            color: #FFD700;
+            cursor: pointer;
+        }
+
+        .three-row-cards {
+            width: 64%;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border: 1 px solid #FFD700;
+            /* display: flex;
+    justify-content: center; */
+        }
+
+        #crafted-getaways-text {
+            margin-top: 20px;
+            margin-bottom: 16px;
+            color: #FFD700;
+        }
+
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card-1 {
+            width: 250px;
+            height: 220px;
+            /* border:1px solid #FFD700; */
+            border-radius: 10px;
+        }
+
+        .img-1 {
+            width: 250px;
+            height: 220px;
+            border-radius: 10px;
+        }
+
+        .text-on-img {
+            color: white;
+            position: relative;
+            bottom: 70px;
+            left: 10px;
+            /* background:rgba(0,0,0,0.112); */
+        }
+
+        #text-on-img-id {
+            bottom: 50px;
+            left: 10px;
+        }
+
+        #Text-on-img {
+            bottom: 60px;
+        }
+
+        .text-on-img-cards-row2 {
+            color: white;
+            position: relative;
+            bottom: 40px;
+            left: 10px;
+        }
+
+        .parent-of-indigo-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .indigo-image {
+            width: 100%;
+            height: 200px;
+        }
+
+        .from-our-blogs {
+            width: 64%;
+            height: 20px;
+            margin: auto;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+
+        .from-our-blogs-section {
+            margin-bottom: 40px;
+        }
+
+        .cards-from-our-blogs-section {
+            margin: auto;
+            width: 64.5%;
+            height: 280px;
+            /* border: 1px solid #FFD700; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .jodhpur-div {
+            width: 300px;
+            height: 220px;
+            margin: 10px;
+            /* border: 1px solid #FFD700; */
+            border-radius: 10px;
+        }
+
+        .jodhpur-img {
+            width: 270px;
+            height: 220px;
+            border-radius: 10px;
+        }
+
+        .jodhpur-text {
+            color: #FFD700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* .text-section{
+
+} */
+
+        .texts {
+            margin: auto;
+            width: 64.5%;
+            height: 600px;
+            /* border: 1px solid #FFD700; */
+            color: #FFD700;
+            padding: 10px;
+        }
+
+        .footer-section {
+            background-color: #FFD700;
+            width: 100%;
+            height: 250px;
+        }
+
+        .parent-of-footer {
+            display: flex;
+            justify-content: space-around;
+            color: black;
+            margin: 30px;
+            padding: 30px;
+        }
+
+        .cards-from-our-blogs-section-links {
+            text-decoration: none;
+            list-style: none;
+        }

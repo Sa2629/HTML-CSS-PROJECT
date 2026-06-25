@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Level - Live View</title>
-  <link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2012/04/24/12/46/letter-39873_960_720.png">
+  <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Eo_circle_yellow_letter-t.svg/960px-Eo_circle_yellow_letter-t.svg.png">
 <style>
 </style>
 <link href="index.css" rel="stylesheet">
@@ -18,46 +18,106 @@
     <div class="logo">Level</div>
 
     <ul>
-        <li><a href="#Home-1">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#benifits-section">Benfits-Offers</a></li>
-        <li><a href="#sight-seeing">Sight Seeing</a></li>
+        <li><a class="nav-home" href="#Home-1">Home</a>
+        <!-- <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#benifits-section">Benfits-Offers</a></li> -->
+        <li><a href="Hotels.html">Hotels</a></li>
+        <li><a href="sightseeing.html">Sight Seeing</a></li>
         <li><a href="#contact-us">Contact</a></li>
     </ul>
 </nav>
+<!-- 
+<div class="home-hover">
+    <div class="home-hoverr">
+        <ul>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">Benifits-Offers</a></li>
+        </ul>
+    </div>
+</div> -->
 
 <div class="floating-btn"> <a style="list-style: none;text-decoration: none;" href="https://www.goindigo.in/sightseeing?linkNav=Flightsheadersightseeing" target="_blank">Not Sure?</a> </div>
 
 <section class="hero">
-    <!-- <img class="bg-image" src="https://img.magnific.com/premium-photo/concept-adventure-extreme-travel_820340-31600.jpg?semt=ais_hybrid&w=740&q=80"> -->
-    <h2>"The world is a book and those who do not travel read only one page." – Saint Augustine</h2>
+   <video width="100%" autoplay muted loop>
+    <source src="Munnar.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+   </video>
+    <!-- <h2>"The world is a book and those who do not travel read only one page." – Saint Augustine</h2> -->
     
-    <a href="https://www.asianleadershipcentre.org/asia-council/countries/" target="_blank" class="btn">Get Started</a>
+    <!-- <a href="https://www.asianleadershipcentre.org/asia-council/countries/" target="_blank" class="btn">Get Started</a> -->
 </section>
 
-<section class="form-container">
+<section class="selection-box"> <!--selection-box starts here-->
+            <div class="parent-container"> <!--this is a parent container of child elements-->
+                <div class="main-box">
+                    <div class="unlock-6e-exclusive-rates-block">
+                        <h3>Unlock 6E Exclusive Rates - just enter your PNR!</h3>
+                    </div>
+                    <div class="radio-buttons"> <!--radio buttons div-->
+                        <div class="radio-1"> <!--child 1 of radio buttons div-->
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="search-by-destination">Search by Destination</label>
+                        </div>
 
-    <div class="form">
-        <h2>Flew Over The World</h2>
-        <input class="form-destination" type="text" placeholder="Enter Your Destination 📍"><br>
-        Check-in:<input class="check-in" name="Check-in" placeholder=" 📆  Check-in"  type="date"><br>
-        Check-out:<input class="check-out" name="Check-Out" type="date" placeholder=" 📆  Check-Out" value="Check-Out"><br>
-        rooms:<input class="roomS" name="Rooms" type="number" placeholder="select no.of rooms" value="rooms"><br>
-        Passangers:<input class="passangers" type="number" placeholder="Passangers including Adults & Childrens">
-        <button class="check-avalability">Check Availability</button>
-        <div class="stuck-anywhere-need-help">
-         <span id="stuck-anywhere">stuck anywhere?</span>
-         <span><a class="need-help" href="#">need help</a></span>
-        </div>
-    </div>
+                        <div class="radio-1"> <!--child 2 of radio buttons div-->
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">Search by PNR</label> <span
+                                style="color:#FFD700 ;border:1px solid #FFD700;border-radius: 10px; padding: 3px; ">new</span>
+                        </div>
 
-</section>
+                    </div> <!--radio buttons div ended here-->
+
+                    <div class="parent-container-for-inner-box"> <!--this is the parent container of inner box-->
+                        <div class="destination-div">
+                            <div class="destination-text">
+                                <h3>Destination or Property Name</h3>
+                            </div>
+                            <div class="where-to">
+                                <h2>Where to?</h2>
+                            </div>
+                        </div>
+
+                        <div class="check-in-date-div">
+                            <div class="check-in-date-text">
+                                <h3>Check-in Date</h3>
+                            </div>
+                            <div class="date">
+                                <h2>23-June-26</h2>
+                            </div>
+                        </div>
+
+                        <div class="check-in-date-div">
+                            <div class="check-in-date-text">
+                                <h3>Check-out Date</h3>
+                            </div>
+                            <div class="date">
+                                <h2>24-June-26</h2>
+                            </div>
+                        </div>
+
+                        <div class="check-in-date-div">
+                            <div class="check-in-date-text">
+                                <h3>No.of Guests & Rooms</h3>
+                            </div>
+                            <div class="date">
+                                <h2>1 Adult, 1 Room</h2>
+                            </div>
+                        </div>
+
+                        <div class="search-div">
+                            <div class="search-div1"><button class="search-btn">Search</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 </div>
 
 <div id="portfolio">
 
-<section class="red-color-section">
+    <section class="red-color-section">
 
         <div class="We-are-here-to-help-you">
             <h1 id="h1">We are here to help you?</h1>
@@ -70,7 +130,7 @@
         <div class="subscribe-newsletter">
             <button class="sn">SUBSCRIBE NEWSLETTERS</button>
         </div>
-</section>
+    </section>
 
     <section class="my-own">
         <h1 id="my-own-side-heading"><b>Some of the Best Places to visit in india >>></b></h1>
@@ -270,7 +330,7 @@
 
     
 
-    <section class="Offers-benifits">
+<section class="Offers-benifits">
         <div id="benifits-section">
         <h1 class="benifits-offers">Find exciting offers and best deals</h1>
         <div class="parent-container-under-offers-benifits">
@@ -530,6 +590,9 @@
         </div>
     </section>
 
+    <section>
+
+    </section>
     
 <footer>
     <div id="contact-us">
