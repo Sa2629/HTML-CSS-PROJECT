@@ -929,3 +929,311 @@ footer{
     }
 
 }
+
+/* =========================================================
+   MOBILE RESPONSIVE OVERRIDES
+   ========================================================= */
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding: 100px 18px 50px;
+    }
+
+    .hero h2 {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .form-container {
+        padding: 20px 10px;
+        margin-top: 40px;
+    }
+
+    .selection-box {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .main-box {
+        width: 95% !important;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .radio-buttons {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .parent-container-for-inner-box {
+        width: calc(100% - 20px) !important;
+        height: auto;
+        min-height: 90px;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .destination-div,
+    .check-in-date-div {
+        width: 100%;
+        height: auto;
+        min-height: 70px;
+        border-right: none;
+        border-bottom: 1px solid #FFD700;
+    }
+
+    .search-div {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .search-btn {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .cards {
+        padding-top: 40px;
+        gap: 20px;
+    }
+
+    .card1,
+    .card2,
+    .Card-One {
+        width: 95% !important;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img-div,
+    .kerala-imgg,
+    .card1-description {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .whole-box,
+    .content-box1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .get-there-box,
+    .iframe,
+    .video,
+    .video2 {
+        width: 100%;
+        max-width: 100%;
+        height: 220px;
+        margin-left: 0;
+    }
+
+    .offer-img {
+        width: 100%;
+    }
+
+    .last-img-under-benifits-offers {
+        width: 100%;
+        height: auto;
+    }
+
+    #top-travel-picks {
+        margin: 25px 10px;
+        font-size: 1.5rem;
+    }
+
+    .five-cards-section {
+        padding: 15px 10px;
+    }
+
+    .container9 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .five {
+        width: 100% !important;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .texas {
+        width: 100%;
+        height: auto;
+    }
+
+    .more-info-btn {
+        width: 90%;
+    }
+
+    .parent-container-of-trending-sight-seeing-cities {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #jaipur-image {
+        width: 90%;
+        max-width: 250px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .parent-container-of-new-destinations {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .athens {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tilt-card-section {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .Embark-on-a-journey {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .tilt-cards {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .tilt-card1,
+    .video1 {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        position: static;
+        margin: auto;
+    }
+
+    .big-yellow-box {
+        width: 95%;
+        max-width: 600px;
+        height: 300px;
+        margin: 20px auto;
+    }
+
+    .number,
+    .daily,
+    .flights {
+        position: static;
+        margin: 20px;
+    }
+
+    .number {
+        font-size: 60px;
+    }
+
+    .indigo-plane {
+        position: static;
+        margin: 10px 20px;
+    }
+
+    .four-boxes-parent-container {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .two-section-parent-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ninety-six-domesty-destinations {
+        width: 90%;
+        height: auto;
+        min-height: 180px;
+    }
+
+    .last-footer-section {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .column-1 {
+        padding: 15px;
+    }
+
+    #h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .Subscribe-to-get-our-newsletters,
+    .subscribe-newsletter {
+        width: 95%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .main-box {
+        width: 90% !important;
+    }
+
+    .card1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .img-div,
+    .kerala-imgg,
+    .card1-description {
+        width: 100%;
+        height: auto;
+    }
+
+    .container9 {
+        flex-wrap: wrap;
+    }
+
+    .five {
+        width: 45%;
+        height: auto;
+    }
+
+    .tilt-card-section {
+        height: auto;
+        flex-wrap: wrap;
+    }
+}

@@ -1,4 +1,4 @@
-   *{
+*{
     box-sizing: border-box;
     margin:0;
     padding: 0;
@@ -603,4 +603,230 @@
 
 @media (min-width: 1200px) {
   .Trending-Destinations-section, .explore-more-section { max-width: 1100px; margin: 0 auto; }
+}
+
+/* =========================================================
+   MOBILE RESPONSIVE OVERRIDES
+   ========================================================= */
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+    .offer-bar {
+        width: 100%;
+        height: 35px;
+    }
+
+    nav {
+        padding: 12px 15px;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .login-btn {
+        width: 75px;
+    }
+
+    .hot-air-ballon-section {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+    .text-on-the-hot-air-ballon-section {
+        position: static;
+        padding: 100px 20px 20px;
+        text-align: center;
+        font-size: clamp(2rem, 10vw, 3.5rem);
+    }
+
+    .main-box {
+        width: 95% !important;
+        height: auto;
+        margin-top: 50px;
+        padding-bottom: 15px;
+    }
+
+    .radio-buttons {
+        flex-wrap: wrap;
+    }
+
+    .parent-container-for-inner-box {
+        width: calc(100% - 20px) !important;
+        height: auto;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .destination-div,
+    .check-in-date-div {
+        width: 100%;
+        height: auto;
+        min-height: 70px;
+        border-right: none;
+        border-bottom: 1px solid #FFD700;
+    }
+
+    .search-div {
+        padding: 10px;
+    }
+
+    .search-btn {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .Trending-Destinations-section,
+    .Trending-Activities-section,
+    .Iconic-Experience-section,
+    .nine-free-flights-indigo-section,
+    .explore-more-section,
+    .big-long-text {
+        width: 95% !important;
+    }
+
+    .trending-destination-text,
+    .trending-activities-text,
+    .icon-experience-text {
+        font-size: 26px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .childs-of-main-container {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .singapore-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .parent-container-of-child-elements {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .child-of-parent-container {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .gardens-by-the-bay-singapore-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .Parent-container-of-six-images {
+        width: 100%;
+        height: auto;
+    }
+
+    .child-elements-of-six-images {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+    }
+
+    .kayaking-img1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-under-the-kayaking-img1 {
+        position: static;
+        padding: 8px;
+    }
+
+    .nine-indigo-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .two-images {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .image-one,
+    .indigo-image-one {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-on-image {
+        top: 25px;
+        left: 25px;
+        font-size: 16px;
+    }
+
+    .gray-color-border-text {
+        width: 95%;
+    }
+
+    .actual-content {
+        width: 100%;
+    }
+
+    .parent-container-of-myorders {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 10px;
+    }
+
+    .child-container-of-myorders {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .parent-container-foroperated-and-manged-by-vernost,
+    .grand-parent-container-for-operated-and-manged-by-vernost,
+    .parent-container-for-copyrights {
+        width: 95%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .Trending-Destinations-section,
+    .Trending-Activities-section,
+    .Iconic-Experience-section,
+    .nine-free-flights-indigo-section,
+    .explore-more-section,
+    .big-long-text {
+        width: 90%;
+    }
+
+    .main-container {
+        flex-wrap: wrap;
+    }
+
+    .two-images {
+        flex-direction: column;
+    }
+
+    .image-one,
+    .indigo-image-one {
+        width: 100%;
+    }
 }

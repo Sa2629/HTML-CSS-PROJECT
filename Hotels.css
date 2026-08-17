@@ -1,4 +1,4 @@
-        * {
+  * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -541,3 +541,195 @@
         @media (min-width: 1200px) {
             .images-container, .three-row-cards { max-width: 1100px; margin: 0 auto; }
         }
+
+/* =========================================================
+   MOBILE RESPONSIVE OVERRIDES
+   ========================================================= */
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 15px;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .login-btn {
+        width: 75px;
+    }
+
+    .plane {
+        display: none;
+    }
+
+    .book-hotels-section {
+        margin-top: 80px;
+    }
+
+    .book-hotels-parent-container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .book-hotels-text {
+        height: auto;
+        padding: 10px;
+    }
+
+    .mybookings-wishlist {
+        width: 100%;
+        max-width: 350px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .selection-box {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .main-box {
+        width: 95% !important;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .radio-buttons {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .parent-container-for-inner-box {
+        width: calc(100% - 20px) !important;
+        height: auto;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .destination-div,
+    .check-in-date-div {
+        width: 100%;
+        height: auto;
+        min-height: 70px;
+        border-right: none;
+        border-bottom: 1px solid #FFD700;
+    }
+
+    .search-div {
+        padding: 10px;
+    }
+
+    .search-btn {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .goa-parent {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .images-container,
+    .powered-section,
+    .three-row-cards,
+    .from-our-blogs,
+    .cards-from-our-blogs-section,
+    .texts {
+        width: 95% !important;
+    }
+
+    .images-container {
+        padding: 10px;
+    }
+
+    .images-container img,
+    .slider {
+        width: 100%;
+        height: 220px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-1 {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .img-1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards-from-our-blogs-section {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jodhpur-div {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .jodhpur-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-section {
+        height: auto;
+    }
+
+    .parent-of-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .info-box p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .images-container,
+    .powered-section,
+    .three-row-cards,
+    .texts {
+        width: 90% !important;
+    }
+
+    .cards-from-our-blogs-section {
+        width: 90%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .goa-parent {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
