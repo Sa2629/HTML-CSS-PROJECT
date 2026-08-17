@@ -520,3 +520,24 @@
             text-decoration: none;
             list-style: none;
         }
+
+        /* Responsive media queries */
+        @media (max-width: 600px) {
+            nav { padding: 12px; }
+            nav ul { display: none; }
+            .logo { font-size: 22px; }
+            .book-hotels-parent-container, .parent-container, .images-container, .three-row-cards { width: 100% !important; padding: 0 12px; }
+            .cards { flex-direction: column; align-items: center; gap: 20px; }
+            img, .img-1, .jodhpur-img { width: 100%; height: auto; }
+            .card-1, .card1 { width: 100%; max-width: 420px; }
+        }
+
+        @media (max-width: 900px) {
+            nav { padding: 14px 30px; }
+            .logo { font-size: 24px; }
+            .images-container, .powered-section, .three-row-cards { width: 90% !important; }
+        }
+
+        @media (min-width: 1200px) {
+            .images-container, .three-row-cards { max-width: 1100px; margin: 0 auto; }
+        }

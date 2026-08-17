@@ -582,3 +582,25 @@
     width:64%;
     margin:auto;
  }
+
+/* Responsive media queries */
+@media (max-width: 600px) {
+  nav { padding: 12px; }
+  nav ul { display: none; }
+  .logo { font-size: 22px; }
+  .hot-air-ballon-section, .main-box, .Trending-Destinations-section, .parent-container-of-myorders { width: 100% !important; padding: 0 12px; }
+  .parent-container, .main-container, .parent-container-of-myorders { flex-direction: column; align-items: center; }
+  img, .singapore-img, .nine-indigo-img, .child-elements-of-six-images, .image-one { width: 100%; height: auto; }
+  .childs-of-main-container, .child-of-parent-container, .child-of-main-container { width: 100%; }
+}
+
+@media (max-width: 900px) {
+  nav { padding: 14px 30px; }
+  .logo { font-size: 24px; }
+  .Trending-Destinations-section, .explore-more-section, .big-long-text { width: 90% !important; }
+  .two-images { flex-direction: column; }
+}
+
+@media (min-width: 1200px) {
+  .Trending-Destinations-section, .explore-more-section { max-width: 1100px; margin: 0 auto; }
+}
